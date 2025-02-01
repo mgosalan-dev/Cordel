@@ -19,7 +19,7 @@
 html, body{
     font-family: var(--font1);
     min-height: 100vh;
-    background-color: lightslategray;
+    background-color: rgb(255, 255, 255);
 }
 
 header{
@@ -53,39 +53,62 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 35px;
+    padding-left: 40px;
     font-family: var(--font3);
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 section.normal{
     background-color: aliceblue;
     color: black;
 }
+
+section.imagem{
+    background-color: darkgray;
+    color: aliceblue;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.609);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+
+
 #joaninha.imagem {
     background-color: rgba(51, 51, 51);
-    color: aliceblue;
     background-image: url("../image/background001.jpg");
-    background-size:cover;
-    background-attachment: scroll;
-
-
+    background-position: right center;
+    
     
 }
 
 #livro.imagem{
-    background-color: rgba(51, 51, 51);
-    color: aliceblue;
     background-image: url("../image/background002.jpg");
-    background-size:cover;
-    background-attachment: scroll;
+    background-size: cover;
+    
+}
+
+section#floresta.imagem{
+    background-image: url("../image/background003.jpg");
+    background-position:center;
+    
+    
 }
 
 
 section.imagem > p{
     display: inline-block;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.249);
+    padding: 20px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.391);
+    text-shadow: 1px 1px 0px black;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 50px 20px black;
+    
+}
+
+section p{
+    padding-bottom: 1.5em;
 }
 
 footer{
@@ -93,4 +116,5 @@ footer{
     text-align: center;
     color: aliceblue;
     padding: 10px;
+    margin-top:50px ;
 }
